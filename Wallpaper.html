@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Idk name rn</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="scripts/datetime.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <script type="text/javascript" src="scripts/one.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+
+<body onload="startDate(), startTime()">
+    <div class="container">
+        <div class="top">
+            <div class="window">
+                <div class="titlebar">
+                    <div class="buttons">
+                        <div class="close"></div>
+                        <div class="minimize"></div>
+                        <div class="zoom"></div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>
+                        <div id="player">
+                            <div>
+                                <div class="title" id="title">
+                                    Title
+                                </div>
+                                <div class="artist" id="artist">
+                                    Artist
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <img class="previous" id="previous" src="img/previous.png" onclick="previous()" />
+                            <img class="pP" id="pP" src="img/pause.png" onclick="pP()" />
+                            <img class="next" id="next" src="img/next.png" onclick="next()" />
+                        </div>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <div class="time" id="time"><a id="hour"></a> : <a id="min"></a></div>
+            <div class="day">Its <a id="day"></a> </div>
+            <div class="date" id="date"></div>
+            <div class="weather">
+                <div>At <a id="city">Monte Carlo</a>.</div>
+                <div>Its currently <a id="temp">5</a.>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
